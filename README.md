@@ -48,7 +48,7 @@ Este projeto Full Stack foi desenvolvido para demonstrar habilidades no desenvol
 ### 📌 **Pré-requisitos**
 Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
 
-- **Python 3.11+** (⚠️ Não use Python 3.13)
+- **Python 3.12+** (⚠️ Não use Python 3.13)
 - **Node.js 20+** 
 - **npm** ou **yarn**
 - **MongoDB Atlas** (conta gratuita)
