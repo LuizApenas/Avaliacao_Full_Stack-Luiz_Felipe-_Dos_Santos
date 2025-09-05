@@ -48,8 +48,12 @@ Este projeto Full Stack foi desenvolvido para demonstrar habilidades no desenvol
 ### 📌 **Pré-requisitos**
 Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
 
+- **Git
+   https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.1/Git-2.51.0-64-bit.exe
 - **Python 3.12+** (⚠️ Não use Python 3.13)
+   https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
 - **Node.js 20+** 
+   https://nodejs.org/dist/v22.19.0/node-v22.19.0-x64.msi
 - **npm** ou **yarn**
 - **MongoDB Atlas** (conta gratuita)
 
@@ -90,31 +94,11 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
    cd backend
    ```
 
-2. **Execute o script de instalação:**
-   ```bash
-   # Windows
-   install_dependencies.bat
-   
-   # Linux/Mac
-   python install_dependencies.py
-   ```
+2. **Execute o script de instalação dentro da pasta do Back-End:**
 
-3. **Configure as variáveis de ambiente (OPCIONAL):**
-   O projeto já vem com credenciais de teste configuradas. Se quiser personalizar, crie um arquivo `.env` na pasta `backend/`:
-   ```env
-   # MongoDB Atlas (já configurado no projeto para testes)
-   MONGODB_URL=mongodb+srv://luiz_test_encurtador:a6UXnqk9LoVVh6dt@cluster0.cdebnt2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-   DATABASE_NAME=url_shortener
-   
-   # API Configuration
-   API_HOST=0.0.0.0
-   API_PORT=8000
-   
-   # Base URL
-   BASE_URL=http://127.0.0.1:8000
-   ```
-   
-   > ⚠️ **Nota:** As credenciais acima são apenas para testes e demonstração. Em produção, use suas próprias credenciais.
+   install_dependencies
+
+> ⚠️ **Nota:** As credenciais são apenas para testes e demonstração. Em produção, use suas próprias credenciais.
 
 4. **Execute a aplicação:**
    ```bash
