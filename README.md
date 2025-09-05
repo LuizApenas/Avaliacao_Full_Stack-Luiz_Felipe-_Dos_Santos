@@ -83,7 +83,7 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
 
 ### 🔧 **Como Rodar o Back-End**
 
-#### **Opção 1: Instalação Automatizada (Recomendado)**
+#### **Instalação Automatizada (Recomendado)**
 
 1. **Acesse a pasta do Back-End:**
    ```bash
@@ -120,32 +120,6 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
    ```bash
    python main.py
    ```
-
-#### **Opção 2: Instalação Manual**
-
-1. **Crie um ambiente virtual:**
-   ```bash
-   cd backend
-   python -m venv venv
-   
-   # Windows
-   venv\Scripts\activate
-   
-   # Linux/Mac
-   source venv/bin/activate
-   ```
-
-2. **Instale as dependências em ordem:**
-   ```bash
-   python -m pip install --upgrade pip setuptools wheel
-   python -m pip install -r requirements.txt --prefer-binary --no-cache-dir
-   ```
-
-3. **Execute a aplicação:**
-   ```bash
-   python main.py
-   ```
-   > 💡 **Dica:** O projeto já vem com MongoDB configurado para testes, não precisa configurar nada!
 
 ### 🌐 **URLs de Acesso**
 
