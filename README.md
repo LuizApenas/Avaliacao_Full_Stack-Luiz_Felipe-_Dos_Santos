@@ -281,10 +281,10 @@ npm run build
 
 ## 📜 **Autor**
 
-👤 **Seu Nome**  
-📧 **Email:** seu.email@exemplo.com  
-🔗 **LinkedIn:** https://www.linkedin.com/in/seu-perfil/  
-🐱 **GitHub:** https://github.com/seu-usuario  
+👤 **Luiz Felipe Dos Santos**  
+📧 **Email:** luizz.felipe.santos17@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/luiz-felipe-santos-95490b208/ 
+🐱 **GitHub:** https://github.com/LuizApenas  
 
 ---
 
