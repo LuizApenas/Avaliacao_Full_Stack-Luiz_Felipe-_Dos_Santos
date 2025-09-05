@@ -1,0 +1,28 @@
+# FastAPI e servidor
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# MongoDB
+motor==3.6.0
+beanie==1.27.0
+pymongo==4.8.0
+'
+# Validação de dados
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP requests para health check
+httpx==0.25.2
+
+# Tarefas agendadas
+apscheduler==3.10.4
+
+# CORS
+python-multipart==0.0.6
+
+# Utilitários
+python-dotenv==1.0.0
+
+# Desenvolvimento e testes
+pytest==7.4.3
+pytest-asyncio==0.21.1
