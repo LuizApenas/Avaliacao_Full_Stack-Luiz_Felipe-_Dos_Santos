@@ -207,11 +207,6 @@ uvicorn main:app --reload --port 8001
 npm run dev -- --port 5174
 ```
 
-### **Erro de conexão MongoDB**
-1. Verifique se a string de conexão está correta no `.env`
-2. Certifique-se de que o IP está liberado no MongoDB Atlas
-3. Teste a conexão manualmente
-
 ## 🧪 **Como Testar**
 
 1. **Teste o Backend:**
