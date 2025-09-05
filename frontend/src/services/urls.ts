@@ -1,8 +1,11 @@
 import type { UrlItem } from "../types";
 
+// URL base da API do backend
+const API_BASE_URL = "http://localhost:8000";
+
 // Função para buscar todas as URLs cadastradas no backend
 export async function fetchUrls(): Promise<UrlItem[]> {
-    const resposta = await fetch("/api/urls");
+    const resposta = await fetch(`${API_BASE_URL}/api/urls`);
     if (!resposta.ok) throw new Error("Falha ao buscar URLs do servidor");
     return resposta.json();
 }
@@ -17,14 +20,14 @@ export type MetricItem = {
 
 // Função para buscar métricas de acesso do backend
 export async function fetchMetrics(): Promise<MetricItem[]> {
-    const resposta = await fetch("/api/metrics");
+    const resposta = await fetch(`${API_BASE_URL}/api/metrics`);
     if (!resposta.ok) throw new Error("Falha ao buscar métricas do servidor");
     return resposta.json();
 }
 
 // Função para registrar uma métrica quando o usuário clica no botão "Abrir"
 export async function recordMetric(shortId: string): Promise<string> {
-    const resposta = await fetch(`/api/metrics/${shortId}`, {
+    const resposta = await fetch(`${API_BASE_URL}/api/metrics/${shortId}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -297,3 +297,79 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ---
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela no repositório!**
+
+# ===================================================================
+# REQUIREMENTS COMPATÍVEL COM PYTHON 3.11, 3.12 E 3.13
+# Ordem otimizada para evitar conflitos de dependências
+# ===================================================================
+
+# ETAPA 1: Dependências base do sistema
+certifi>=2024.0.0
+idna>=3.4,<4.0
+sniffio>=1.3.0,<2.0.0
+click>=8.1.0,<9.0.0
+colorama>=0.4.6,<0.5.0
+
+# ETAPA 2: Tipos e extensões fundamentais
+typing-extensions>=4.8.0,<5.0.0
+annotated-types>=0.6.0,<0.8.0
+
+# ETAPA 3: Utilitários core
+python-dotenv>=1.0.0,<1.1.0
+anyio>=4.0.0,<5.0.0
+
+# ETAPA 4: HTTP core (ordem específica)
+h11>=0.14.0,<0.15.0
+httpcore>=1.0.0,<2.0.0
+httpx>=0.25.0,<0.27.0
+
+# ETAPA 5: Validação (versões compatíveis com Python 3.13)
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.6.0,<3.0.0
+
+# ETAPA 6: Web framework base
+starlette>=0.28.0,<0.30.0
+
+# ETAPA 7: FastAPI
+fastapi>=0.105.0,<0.107.0
+
+# ETAPA 8: Servidor ASGI (sem watchfiles para evitar compilação Rust)
+httptools>=0.6.0,<0.7.0
+python-multipart>=0.0.6,<0.1.0
+# watchfiles removido - causa problemas de compilação no Python 3.13
+websockets>=12.0,<14.0
+# Uvicorn básico (sem [standard]) para evitar watchfiles
+uvicorn>=0.24.0,<0.26.0
+
+# ETAPA 9: MongoDB
+pymongo>=4.6.0,<5.0.0
+motor>=3.3.0,<4.0.0
+beanie>=1.24.0,<2.0.0
+
+# ETAPA 10: Testes
+pytest>=7.4.0,<8.0.0
+pytest-asyncio>=0.21.0,<0.23.0
+
+## 🔧 **Principais Mudanças:**
+
+1. **❌ Removido `watchfiles`** - causava erro de compilação Rust
+2. **🔄 Atualizado `pydantic`** para versão 2.10.0+ (compatível com Python 3.13)
+3. **🔄 Atualizado `pydantic-settings`** para versão 2.6.0+
+4. **🔄 Atualizado `starlette`** para versão 0.28.0+
+5. **🔄 Atualizado `fastapi`** para versão 0.105.0+
+6. **🔄 Atualizado `beanie`** para versão 1.24.0+
+7. **🔄 Mudado `uvicorn[standard]`** para `uvicorn` básico (sem watchfiles)
+
+## 🚀 **Agora o usuário pode executar:**
+
+```bash
+<code_block_to_apply_from>
+python -m pip install -r requirements.txt --prefer-binary --no-cache-dir
+```
+
+**Sem problemas de compilação!** ✅
+
+## ⚠️ **Nota:**
+- O projeto funcionará perfeitamente
+- Apenas não terá **hot reload automático** (watchfiles)
+- Para reload manual: pare o servidor (Ctrl+C) e execute `python main.py` novamente

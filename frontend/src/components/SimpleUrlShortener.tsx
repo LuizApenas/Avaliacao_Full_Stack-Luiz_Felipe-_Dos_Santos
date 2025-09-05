@@ -48,7 +48,7 @@ export function SimpleUrlShortener() {
     
     try {
       // Faz requisição POST para o backend criar URL encurtada
-      const resposta = await fetch("/api/urls", {
+      const resposta = await fetch("http://localhost:8000/api/urls", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ original_url: url }),
